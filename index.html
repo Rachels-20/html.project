@@ -2,17 +2,73 @@
 <html>
 	<head>
 		<title>Latihan Form</title>
-		<meta name="author" content="Rachel Setiawan"
+		<meta name="author" content="Rachel Setiawan">
+		<style>
+			body{
+			background-color: gray;
+			}
+			h2{
+			color: white;
+			text-align:center;
+			}
+			#judul{
+			color:black; font-style: italic;
+			}
+			input[type="text"], [type="date"], [type="radio"]{
+			border-radius: 15px;
+			background-color: pink;
+			color: white;
+			}
+			*{
+			color: white;
+			font-family: Aptos;
+			}
+			::placeholder{
+			color:black;
+			}
+			input[type="tel"], [type="email"], [type="file"]{
+			color:white;
+			background-color:black;
+			border-radius: 15px;
+			}
+			select{
+			background-color: pink;
+			color: white;
+			border-radius: 15px;
+			}
+			textarea{
+			background-color: pink;
+			color: white;
+			border-radius: 15px;
+			font-family: Arial;
+			text-align: justify;
+			}
+			#button{
+			font-weight: bold;
+			border-radius: 15px;
+			color: white;
+			background-color: black;
+			padding: 20px;
+			}
+			#button:hover{
+			background-color: pink;
+			font-weight: bold;
+			padding: 20px;
+			color: white;
+			}
+		</style>
+		<!-- pemberian style di tag head, dengan tag style, lalu didalam tag style masukkan tag yang akan diberi style, atau class atau id yang akan diberi style, dengan format seperti diatas -->
 	</head>
 	<body>
 		<h2>Form Pendaftaran</h2>
+		<h2 id="judul">Data Mahasiswa</h2>
 			<form>
 				<table width="100%">
 					<tr>
 						<td>
 							<fieldset>
 								<legend>Data Pribadi</legend>
-									<table cellpadding="5">
+									<table cellpadding="7">
 										<tr>
 											<td><label>Nama</label></td>
 											<td>:</td>
@@ -69,7 +125,7 @@
 											</td>
 										</tr>
 										<tr>
-											<td><label>Pas Foto<label></td>
+											<td><label>Pas Foto 3x4<label></td>
 											<td>:</td>
 											<td><input type="file" name="pasfoto" accept="image/*" required></td>
 										</tr>
@@ -127,8 +183,8 @@
 									</tr>
 									<tr>
 										<td>
-											<input type="submit" value="submit">
-											<input type="reset" value="reset">
+											<input type="submit" value="submit" id="button">
+											<input type="reset" value="reset" id="button">
 										</td>
 									</tr>
 								</table>
